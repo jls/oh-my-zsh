@@ -35,3 +35,4 @@ alias afind='ack-grep -il'
 
 alias die='killall'
 
+alias gake='gulp'
