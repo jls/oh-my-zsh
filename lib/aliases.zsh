@@ -12,6 +12,8 @@ alias please='sudo'
 
 #alias g='grep -in'
 
+alias rake='noglob rake'
+
 # Show history
 if [ "$HIST_STAMPS" = "mm/dd/yyyy" ]
 then
