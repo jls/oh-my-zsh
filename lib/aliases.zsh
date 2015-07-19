@@ -6,13 +6,35 @@ alias po='popd'
 alias ...='cd ../..'
 alias -- -='cd -'
 
+# Easier navigation: .., ..., ...., ....., ~ and -
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ~="cd ~" # `cd` is probably faster to type though
+alias -- -="cd -"
+
+# Shortcuts
+alias dbox="cd ~/Documents/Dropbox"
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+alias p="cd ~/Projects"
+alias pa="cd ~/Projects/airstep1"
+alias g="git"
+alias h="history"
+alias j="jobs"
+
 # Super user
 alias _='sudo'
 alias please='sudo'
 
+# Reload the shell (i.e. invoke as a login shell)
+alias reload="exec $SHELL -l"
+
 #alias g='grep -in'
 
 alias rake='noglob rake'
+alias gs='git st'
 
 # Show history
 if [ "$HIST_STAMPS" = "mm/dd/yyyy" ]
